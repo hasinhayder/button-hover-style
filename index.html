@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Button Hover Style</title>
+    <meta name="description" content="Interesting button hover image animation using #css and #javscript by @hasin">
+    <meta name="keywords" content="css, button, animation, hover, github, opensource">
+    <meta name="og:site_name" content="Button Hover Style Animation" />
+    <meta name="og:title" content="Interesting button hover image animation using #css and #javscript by Hasin Hayder" />
+    <meta name="og:description" content="Interesting button hover image animation using #css and #javscript by Hasin Hayder" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="jquery.share.css">
     <style>
         body{
             padding:50px 100px;
@@ -22,6 +28,9 @@
 
         .info a{
             color: #bbb;
+        }
+        #social {
+            margin-top:30px;
         }
         .menu{
             border:1px solid #ccc;
@@ -111,5 +120,20 @@
     Available in <a href="https://github.com/hasinhayder/button-hover-style" target="_blank">Github</a>. Photos were taken from <a href="http://picjumbo.com" target="_blank">Picjumbo</a>
 </div>
 
+
+<div id="social">
+    
+</div>
+<script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="jquery.share.js"></script>
+<script type="text/javascript">
+    (function($){
+        $(document).ready(function(){
+            $("#social").share({
+                networks: ['facebook','pinterest','googleplus','twitter','linkedin','tumblr','in1','email','stumbleupon','digg']
+            });
+        })
+    })(jQuery);
+</script>
 </body>
 </html>
