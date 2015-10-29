@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button Hover Style</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <style>
+        body{
+            padding:50px 100px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        h1{
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .info{
+            color: #bbb;
+            font-size: 13px;
+            margin-top: 30px;
+        }
+
+        .info a{
+            color: #bbb;
+        }
+        .menu{
+            border:1px solid #ccc;
+            height:150px;
+            width:400px;
+            position: relative;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        .image1{
+            background-image: url(http://picjumbo.imgix.net/HNCK9623.jpg?q=40&w=1650&sharp=30);
+        }
+        .image2{
+            background-image: url(http://picjumbo.imgix.net/HNCK8332.jpg?q=40&w=1650&sharp=30);
+        }
+        .image3{
+            background-image: url(http://picjumbo.imgix.net/HNCK7225.jpg?q=40&w=1650&sharp=30);
+        }
+
+        .menu .image{
+            background-size: cover;
+            width:80px;
+            height:80px;
+            border-radius:40px;
+            margin-top: 35px;
+            float:left;
+            margin-right: 10px;
+            margin-left:10px;
+            -webkit-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            -ms-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            transition: all 0.4s;
+            z-index: -1;
+        }
+
+        .menu .text{
+            font-size: 24px;
+            float:left;
+            top: 60px;
+            left:120px;
+            position: absolute;
+
+            -webkit-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            -ms-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            transition: all 0.4s;
+        }
+
+        .menu:hover .image{
+            position: absolute;
+            top:0px;
+            left:0px;
+            width: 400px;
+            height: 150px;
+            border-radius: 0px;
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+
+        .menu:hover .text{
+            left:20px;
+            color: #fff;
+        }
+
+    </style>
+
+</head>
+<body>
+<h1>Button Hover Style</h1>
+<div class="menu">
+    <div class="image image1"></div>
+    <div class="text">Hello World</div>
+</div>
+<div class="menu">
+    <div class="image image2"></div>
+    <div class="text">Hello Mars</div>
+</div>
+<div class="menu">
+    <div class="image image3"></div>
+    <div class="text">Hello Jupiter</div>
+</div>
+
+<div class="info">
+    Available in <a href="https://github.com/hasinhayder/button-hover-style" target="_blank">Github</a>. Photos were taken from <a href="http://picjumbo.com" target="_blank">Picjumbo</a>
+</div>
+
+</body>
+</html>
